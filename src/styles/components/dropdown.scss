@@ -1,0 +1,13 @@
+@use '../utils' as u;
+
+.dropdown {
+  &__list:not(:first-child) {
+    margin-left: u.rem(30);
+  }
+  &__list:hover {
+    cursor: pointer;
+  }
+  &__subcategories {
+    display: none;
+  }
+}
