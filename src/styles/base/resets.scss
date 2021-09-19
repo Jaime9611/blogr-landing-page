@@ -19,6 +19,10 @@ a:visited {
   color: var(--white-text);
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 li {
   list-style: none;
 }

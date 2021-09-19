@@ -43,7 +43,7 @@
   --footer-text-fw: 400;
 
   // DIMENSIONS
-  --header-height: #{166};
+  --header-height: #{u.rem(166)};
 
   // MEDIA QUERIES
   @include u.breakpoint(desktop) {
@@ -63,6 +63,6 @@
     --footer-text-fw: 400;
 
     // DIMENSIONS
-    --header-height: #{138};
+    --header-height: #{u.rem(138)};
   }
 }
