@@ -1,12 +1,13 @@
 header.header
   .header__container
-    img(src="../assets/images/logo.svg", alt="Company Logo")
+    a(href="#" class="header__logo" ) 
+      img(src="../assets/images/logo.svg", alt="Company Logo")
     .header__ctas
       ul.header__nav-links
         - var links = {Product: ['Overview', 'Pricing', 'Marketplace','Features', 'Integrations'], Company: ['About', 'Team', 'Blog', 'Careers'], Connect: ['Contact', 'Newsletter', 'LinkedIn']}
         +nav_links_generator(links)
-      .header__nav-ctas
-        a(class="btn btn--login")
+      .header__nav-btns
+        a(class="btn btn--transparent header__login" href="#")
           | Login
-        a(class="btn btn--sign-up")
+        a(class="btn btn--white" href="#")
           | Sign Up

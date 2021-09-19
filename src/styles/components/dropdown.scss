@@ -6,6 +6,16 @@
   }
   &__list:hover {
     cursor: pointer;
+    span {
+      text-decoration: underline;
+      opacity: 1;
+    }
+    .icon {
+      opacity: 1;
+    }
+  }
+  &__category {
+    opacity: 0.75;
   }
   &__subcategories {
     display: none;

@@ -2,8 +2,8 @@ mixin nav_links_generator(links)
   each val, key in links
     li(class="dropdown__list")
       span(class="dropdown__category")= key
-      svg(class="dropdown__icon" xmlns='http://www.w3.org/2000/svg' width='10' height='7')
-        path(fill='none' stroke='#FFF' stroke-width='2' opacity='.75' d='M1 1l4 4 4-4')
+      svg(xmlns='http://www.w3.org/2000/svg' width='10' height='7')
+        path(class="icon" fill='none' stroke='#FFF' stroke-width='2' opacity='.75' d='M1 1l4 4 4-4')
       ul(class="dropdown__subcategories")
         each link in val
           li= link
