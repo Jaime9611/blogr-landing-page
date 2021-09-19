@@ -1,0 +1,6 @@
+mixin nav_links_generator(links)
+  each val, key in links
+    li(class="nav__primary-link")= key
+      ul(class="nav__link-sublist")
+        each link in val
+          li= link

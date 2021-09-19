@@ -1,0 +1,10 @@
+header.header
+  img(src="../assets/images/logo.svg", alt="Company Logo")
+  ul.header__nav-links
+    - var links = {Product: ['Overview', 'Pricing', 'Marketplace','Features', 'Integrations'], Company: ['About', 'Team', 'Blog', 'Careers'], Connect: ['Contact', 'Newsletter', 'LinkedIn']}
+    +nav_links_generator(links)
+  .header__nav-ctas
+    a(class="btn btn--login")
+      | Login
+    a(class="btn btn--sign-up")
+      | Sign Up

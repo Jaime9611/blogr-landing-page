@@ -1,3 +1,5 @@
+include ./utils/_link-mixins.pug
+
 doctype html
 html(lang='en')
   head
@@ -13,23 +15,7 @@ html(lang='en')
     link(rel="stylesheet", href="css/main.css")
     script(src="js/main.js") 
   body
-    | Product
-    | Overview
-    | Pricing
-    | Marketplace
-    | Features
-    | Integrations
-    | Company
-    | About
-    | Team
-    | Blog
-    | Careers
-    | Connect
-    | Contact
-    | Newsletter
-    | LinkedIn
-    | Login
-    | Sign Up
+    include ./layouts/_header.pug
     | A modern publishing platform
     | Grow your audience and build your online brand
     | Start for Free
