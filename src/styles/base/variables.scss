@@ -1,3 +1,5 @@
+@use '../utils' as u;
+
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 
 :root {
@@ -25,4 +27,17 @@
   --body-font-family: "Ubuntu", sans-serif;
 
   // FONT-SIZES
+  --h1-hero-font-size: #{u.rem(34)};
+  --hero-subtitles: #{u.rem(18)};
+  --h2-bd-font-size: #{u.rem(28)};
+  --footer-font-size: #{u.rem(15)};
+
+  // FONT-WEIGHTS
+  --h1-hero-fw: 600;
+  --hero-subtitle-fw: 300;
+  --h2-bd-fw: 600;
+  --body-fw: 300;
+  --cta-fw: 700;
+  --footer-titles-fw: 500;
+  --footer-text-fw: 400;
 }
