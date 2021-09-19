@@ -23,8 +23,8 @@
   --very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
   // FONTS
-  --titles-font-family: "Overpass", sans-serif;
-  --body-font-family: "Ubuntu", sans-serif;
+  --primary-font-family: "Overpass", sans-serif;
+  --cta-font-family: "Ubuntu", sans-serif;
 
   // FONT-SIZES
   --h1-hero-font-size: #{u.rem(34)};
@@ -37,10 +37,13 @@
   --h1-hero-fw: 600;
   --hero-subtitle-fw: 300;
   --h2-bd-fw: 600;
-  --body-fw: 300;
+  --body-text-fw: 300;
   --cta-fw: 700;
   --footer-titles-fw: 500;
   --footer-text-fw: 400;
+
+  // DIMENSIONS
+  --header-height: #{166};
 
   // MEDIA QUERIES
   @include u.breakpoint(desktop) {
@@ -58,5 +61,8 @@
     --cta-text-fw: 700;
     --footer-titles-fw: 500;
     --footer-text-fw: 400;
+
+    // DIMENSIONS
+    --header-height: #{138};
   }
 }

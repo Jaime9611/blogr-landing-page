@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+  font-weight: var(--body-text-fw);
+  color: var(--very-dark-grayish-blue-bd-copy);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--white-text);
+}
+
+li {
+  list-style: none;
+}
